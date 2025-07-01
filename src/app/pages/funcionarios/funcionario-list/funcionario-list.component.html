@@ -1,0 +1,43 @@
+<div class="list-container">
+  <div class="list-header">
+    <h2>👨‍⚕️ Lista de Funcionários</h2>
+    <button class="btn btn-add" routerLink="/funcionarios/novo">➕ Novo Funcionário</button>
+  </div>
+
+  <div class="table-responsive">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Cargo</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>Dra. Bianca</td>
+          <td>Médica Ginecologista</td>
+          <td>
+            <button class="btn btn-detail" routerLink="/funcionarios/detalhe/101">👁️ Ver</button>
+            <button class="btn btn-edit" routerLink="/funcionarios/editar/101">✏️ Editar</button>
+            <button class="btn btn-delete">🗑️ Excluir</button>
+            <button class="btn btn-prontuario" routerLink="/funcionarios/prontuario/101">📋 Prontuário</button>
+          </td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Brunão</td>
+          <td>Médico</td>
+          <td>
+            <button class="btn btn-detail" routerLink="/funcionarios/detalhe/102">👁️ Ver</button>
+            <button class="btn btn-edit" routerLink="/funcionarios/editar/102">✏️ Editar</button>
+            <button class="btn btn-delete">🗑️ Excluir</button>
+            <button class="btn btn-prontuario" routerLink="/funcionarios/prontuario/102">📋 Prontuário</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="list-container">
+  <div class="list-header">
+    <h2>🏥 Lista de Convênios</h2>
+    <button class="btn btn-add" routerLink="/convenios/novo">➕ Novo Convênio</button>
+  </div>
+
+  <div class="table-responsive">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome do Convênio</th>
+          <th>Contato</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>201</td>
+          <td>Convênio Sempre Cuidar</td>
+          <td>contatosemprecuidar.com</td>
+          <td>
+            <button class="btn btn-edit" routerLink="/convenios/editar/201">✏️ Editar</button>
+            <button class="btn btn-delete">🗑️ Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>202</td>
+          <td>Plano Mais Saúde</td>
+          <td>contatomaissaude.org</td>
+          <td>
+            <button class="btn btn-edit" routerLink="/convenios/editar/202">✏️ Editar</button>
+            <button class="btn btn-delete">🗑️ Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

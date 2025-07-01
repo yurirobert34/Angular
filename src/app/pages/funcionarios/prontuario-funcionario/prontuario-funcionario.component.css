@@ -1,0 +1,144 @@
+/* Redesign Radical para o Contêiner de Prontuário */
+.prontuario-container {
+  padding: 40px; /* Mais padding */
+  background-color: #282c34; /* Fundo escuro, consistente com o padrão */
+  border-radius: 12px; /* Cantos mais arredondados */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Sombra profunda */
+  margin-top: 40px;
+  max-width: 850px; /* Um pouco mais largo para o conteúdo do prontuário */
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #3a3f47; /* Borda sutil */
+  font-family: 'Inter', sans-serif; /* Consistência de fonte */
+  color: #f0f0f0; /* Cor de texto padrão para o container */
+}
+
+.prontuario-container h2 {
+  color: #61dafb; /* Azul elétrico para o título, consistente */
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(97, 218, 251, 0.5);
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 25px; /* Mais padding para as seções */
+  border: 1px solid #3a3f47; /* Borda escura sutil */
+  border-radius: 8px; /* Cantos arredondados */
+  background-color: #31353d; /* Fundo ligeiramente mais claro que o container principal */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra para as seções */
+}
+
+.section h3 {
+  color: #00e676; /* Verde vibrante para os subtítulos da seção */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #00e676; /* Borda inferior vibrante */
+  padding-bottom: 8px; /* Mais padding abaixo da borda */
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.section p {
+  margin-bottom: 10px;
+  color: #e0e0e0; /* Cor de texto clara */
+  line-height: 1.6; /* Melhor espaçamento entre linhas */
+}
+
+.section strong {
+  color: #61dafb; /* Azul elétrico para o destaque (labels) */
+  margin-right: 10px; /* Mais espaço */
+  font-weight: 700;
+}
+
+.entry {
+  background-color: #3a3f47; /* Fundo escuro para as entradas */
+  border-left: 5px solid #ffeb3b; /* Borda esquerda amarela vibrante */
+  padding: 20px; /* Mais padding */
+  margin-bottom: 20px; /* Mais margem inferior */
+  border-radius: 6px; /* Cantos arredondados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.entry p {
+  margin: 8px 0; /* Mais espaçamento entre parágrafos da entrada */
+  color: #f0f0f0;
+}
+
+.form-group {
+  margin-bottom: 25px; /* Consistente com outros formulários */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #f0f0f0;
+  font-size: 1.1rem;
+}
+
+.form-group input[type="date"],
+.form-group textarea {
+  width: calc(100% - 24px); /* Ajuste para padding e border */
+  padding: 12px; /* Mais padding */
+  border: 1px solid #4a4f58; /* Borda escura */
+  border-radius: 8px; /* Cantos arredondados */
+  font-size: 1.05rem;
+  background-color: #3a3f47; /* Fundo escuro */
+  color: #e0e0e0; /* Texto claro */
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="date"]:focus,
+.form-group textarea:focus {
+  border-color: #61dafb; /* Borda azul elétrica no foco */
+  box-shadow: 0 0 0 0.3rem rgba(97, 218, 251, 0.4); /* Sombra de foco com brilho */
+  outline: none;
+  background-color: #4a4f58; /* Levemente mais claro no foco */
+}
+
+.prontuario-actions {
+  margin-top: 40px; /* Mais margem superior */
+  text-align: center;
+  display: flex; /* Para usar gap */
+  justify-content: center; /* Centralizar horizontalmente */
+  gap: 20px; /* Espaçamento entre os botões */
+}
+
+/* Reutilizando estilos de botões existentes e adicionando o de prontuário */
+.btn { /* Estilo base para todos os botões de ação */
+  padding: 12px 25px; /* Mais padding */
+  border: none;
+  border-radius: 30px; /* Botão "pill" */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra padrão para botões */
+  text-decoration: none; /* Garante que links se pareçam com botões */
+  display: inline-block; /* Para padding e margens corretas */
+}
+
+.btn:hover {
+  transform: translateY(-2px); /* Leve levantamento no hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra mais intensa no hover */
+}
+
+.btn-save {
+  background-color: #00e676; /* Verde vibrante para salvar, consistente */
+  color: #1a1a1a; /* Texto escuro para contraste */
+}
+
+.btn-save:hover {
+  background-color: #00c853;
+}
+
+.btn-back {
+  background-color: #4a4f58; /* Cinza escuro neutro, consistente com inputs */
+  color: #f0f0f0; /* Texto claro */
+}
+
+.btn-back:hover {
+  background-color: #3a3f47; /* Tom mais escuro no hover */
+}

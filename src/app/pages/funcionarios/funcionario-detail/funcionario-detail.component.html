@@ -1,0 +1,31 @@
+<div class="detail-container">
+  <h2>Detalhes do Funcionário</h2>
+
+  <div class="detail-item">
+    <strong>ID:</strong> {{ funcionarioId }}
+  </div>
+  <div class="detail-item">
+    <strong>Nome:</strong> Dr. Bianca
+  </div>
+  <div class="detail-item">
+    <strong>CPF:</strong> 111.222.333-44
+  </div>
+  <div class="detail-item">
+    <strong>Cargo:</strong> Médica
+  </div>
+  <div class="detail-item">
+    <strong>Especialidade:</strong> Cardiologista
+  </div>
+  <div class="detail-item">
+    <strong>Telefone:</strong> (XX) XXXX-XXXX
+  </div>
+  <div class="detail-item">
+    <strong>Email:</strong> ana.costaclinica.com
+  </div>
+
+  <div class="detail-actions">
+    <button class="btn btn-edit" (click)="editFuncionario()">Editar Funcionário</button>
+    <button class="btn btn-prontuario" (click)="viewProntuario()">Ver Prontuário</button>
+    <button class="btn btn-back" (click)="goBack()">Voltar para a Lista</button>
+  </div>
+</div>
