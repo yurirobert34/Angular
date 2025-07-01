@@ -1,0 +1,104 @@
+/* Redesign Radical para o Formulário */
+.form-container {
+  padding: 40px; /* Mais padding */
+  background-color: #282c34; /* Fundo escuro */
+  border-radius: 12px; /* Cantos mais arredondados */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Sombra mais profunda */
+  margin-top: 40px; /* Mais margem superior */
+  max-width: 650px; /* Um pouco mais largo */
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #3a3f47; /* Borda sutil */
+  font-family: 'Inter', sans-serif; /* Consistência de fonte */
+}
+
+.form-container h2 {
+  color: #61dafb; /* Azul elétrico para o título */
+  margin-bottom: 30px; /* Mais espaço abaixo do título */
+  text-align: center;
+  font-size: 2.2rem; /* Título maior */
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(97, 218, 251, 0.5); /* Brilho sutil no título */
+}
+
+.form-group {
+  margin-bottom: 25px; /* Mais espaço entre os grupos */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px; /* Mais espaço abaixo do label */
+  color: #f0f0f0; /* Cor clara para os labels */
+  font-weight: 600; /* Um pouco mais de peso */
+  font-size: 1.1rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group select {
+  width: calc(100% - 24px); /* Ajuste para padding e border */
+  padding: 12px; /* Mais padding nos inputs */
+  border: 1px solid #4a4f58; /* Borda mais escura */
+  border-radius: 8px; /* Cantos arredondados */
+  font-size: 1.05rem;
+  background-color: #3a3f47; /* Fundo escuro para os inputs */
+  color: #e0e0e0; /* Texto claro nos inputs */
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="date"]:focus,
+.form-group input[type="time"]:focus,
+.form-group select:focus {
+  border-color: #61dafb; /* Borda azul elétrica no foco */
+  box-shadow: 0 0 0 0.3rem rgba(97, 218, 251, 0.4); /* Sombra de foco com brilho */
+  outline: none;
+  background-color: #4a4f58; /* Levemente mais claro no foco */
+}
+
+.form-actions {
+  text-align: center; /* Centraliza os botões */
+  margin-top: 40px; /* Mais margem superior */
+  display: flex; /* Para usar gap */
+  justify-content: center; /* Centralizar horizontalmente */
+  gap: 20px; /* Espaçamento entre os botões */
+}
+
+.btn-save {
+  background-color: #00e676; /* Verde vibrante para salvar */
+  color: #1a1a1a; /* Texto escuro para contraste */
+  padding: 12px 25px; /* Mais padding */
+  border: none;
+  border-radius: 30px; /* Botão "pill" */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 230, 118, 0.3); /* Sombra para o botão */
+}
+
+.btn-save:hover {
+  background-color: #00c853; /* Verde mais escuro no hover */
+  transform: translateY(-2px); /* Leve levantamento */
+  box-shadow: 0 6px 15px rgba(0, 230, 118, 0.5);
+}
+
+.btn-cancel {
+  background-color: #ff3d00; /* Laranja/vermelho vibrante para cancelar */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px; /* Botão "pill" */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 61, 0, 0.3); /* Sombra para o botão */
+}
+
+.btn-cancel:hover {
+  background-color: #e62e00; /* Laranja/vermelho mais escuro no hover */
+  transform: translateY(-2px); /* Leve levantamento */
+  box-shadow: 0 6px 15px rgba(255, 61, 0, 0.5);
+}

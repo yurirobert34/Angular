@@ -1,0 +1,49 @@
+<div class="form-container">
+  <h2>{{ isEditMode ? 'Editar' : 'Nova' }} Consulta</h2>
+  <form>
+    <div class="form-group">
+      <label for="paciente">Paciente:</label>
+      <select id="paciente" name="paciente" required>
+        <option value="">Selecione um Paciente</option>
+        <!-- Futuramente, estas opções virão de um serviço de pacientes -->
+        <option value="1">João da Silva</option>
+        <option value="2">Maria Oliveira</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="medico">Médico:</label>
+      <select id="medico" name="medico" required>
+        <option value="">Selecione um Médico</option>
+        <!-- Futuramente, estas opções virão de um serviço de funcionários (filtrando por médicos) -->
+        <option value="101">Dra. Ana Costa</option>
+        <option value="103">Dr. Pedro Santos</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dataConsulta">Data da Consulta:</label>
+      <input type="date" id="dataConsulta" name="dataConsulta" required>
+    </div>
+    <div class="form-group">
+      <label for="horaConsulta">Hora da Consulta:</label>
+      <input type="time" id="horaConsulta" name="horaConsulta" required>
+    </div>
+    <div class="form-group">
+      <label for="tipoConsulta">Tipo de Consulta:</label>
+      <input type="text" id="tipoConsulta" name="tipoConsulta">
+    </div>
+    <div class="form-group">
+      <label for="status">Status:</label>
+      <select id="status" name="status" required>
+        <option value="Agendada">Agendada</option>
+        <option value="Confirmada">Confirmada</option>
+        <option value="Realizada">Realizada</option>
+        <option value="Cancelada">Cancelada</option>
+      </select>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-save">Salvar</button>
+      <button type="button" class="btn btn-cancel" (click)="goBack()">Cancelar</button>
+    </div>
+  </form>
+</div>

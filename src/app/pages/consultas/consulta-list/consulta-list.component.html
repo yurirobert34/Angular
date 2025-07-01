@@ -1,0 +1,48 @@
+<div class="list-container">
+  <div class="list-header">
+    <h2>📅 Lista de Consultas</h2>
+    <button class="btn btn-add" routerLink="/consultas/novo">➕ Nova Consulta</button>
+  </div>
+
+  <div class="table-responsive">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Paciente</th>
+          <th>Médico</th>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>301</td>
+          <td>Kayque Chineider</td>
+          <td>Dr. Brunão</td>
+          <td>2025-07-01</td>
+          <td>10:00</td>
+          <td><span class="status status-agendada">Agendada</span></td>
+          <td>
+            <button class="btn btn-edit" routerLink="/consultas/editar/301">✏️ Editar</button>
+            <button class="btn btn-delete">❌ Cancelar</button>
+          </td>
+        </tr>
+        <tr>
+          <td>302</td>
+          <td>Yuri Robertim</td>
+          <td>Dr. Miguel</td>
+          <td>2025-07-02</td>
+          <td>14:30</td>
+          <td><span class="status status-confirmada">Confirmada</span></td>
+          <td>
+            <button class="btn btn-edit" routerLink="/consultas/editar/302">✏️ Editar</button>
+            <button class="btn btn-delete">❌ Cancelar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
