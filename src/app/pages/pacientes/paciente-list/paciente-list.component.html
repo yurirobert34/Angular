@@ -1,0 +1,42 @@
+<div class="list-container">
+  <div class="list-header">
+    <h2>📋 Lista de Pacientes</h2>
+    <button class="btn btn-add" routerLink="/pacientes/novo">➕ Novo Paciente</button>
+  </div>
+
+  <div class="table-responsive">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>CPF</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Kayque Chineider</td>
+          <td>123.456.789-00</td>
+          <td>
+            <button class="btn btn-detail" routerLink="/pacientes/detalhe/1">👁️ Ver</button>
+            <button class="btn btn-edit" routerLink="/pacientes/editar/1">✏️ Editar</button>
+            <button class="btn btn-delete">🗑️ Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Yuri Robertim</td>
+          <td>987.654.321-11</td>
+          <td>
+            <button class="btn btn-detail" routerLink="/pacientes/detalhe/2">👁️ Ver</button>
+            <button class="btn btn-edit" routerLink="/pacientes/editar/2">✏️ Editar</button>
+            <button class="btn btn-delete">🗑️ Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

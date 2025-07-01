@@ -1,0 +1,30 @@
+<div class="detail-container">
+  <h2>Detalhes do Paciente</h2>
+
+  <div class="detail-item">
+    <strong>ID:</strong> {{ pacienteId }}
+  </div>
+  <div class="detail-item">
+    <strong>Nome:</strong> Kayque Chineider
+  </div>
+  <div class="detail-item">
+    <strong>CPF:</strong> 123.456.789-00
+  </div>
+  <div class="detail-item">
+    <strong>Data de Nascimento:</strong> 15/05/1980
+  </div>
+  <div class="detail-item">
+    <strong>Endereço:</strong> Rua Exemplo, 123 - Bairro Teste, Cidade - UF
+  </div>
+  <div class="detail-item">
+    <strong>Telefone:</strong> (XX) XXXX-XXXX
+  </div>
+  <div class="detail-item">
+    <strong>Convênio:</strong> Convênio ABC
+  </div>
+
+  <div class="detail-actions">
+    <button class="btn btn-edit" (click)="editPaciente()">Editar Paciente</button>
+    <button class="btn btn-back" (click)="goBack()">Voltar para a Lista</button>
+  </div>
+</div>

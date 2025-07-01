@@ -1,0 +1,95 @@
+/* Redesign Radical para o Detalhe de Pacientes */
+.detail-container {
+  padding: 40px; /* Mais padding */
+  background-color: #282c34; /* Fundo escuro, consistente com o padrão */
+  border-radius: 12px; /* Cantos mais arredondados */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Sombra profunda */
+  margin-top: 40px;
+  max-width: 750px; /* Um pouco mais largo */
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #3a3f47; /* Borda sutil */
+  font-family: 'Inter', sans-serif; /* Consistência de fonte */
+  color: #f0f0f0; /* Cor de texto padrão para o container */
+}
+
+.detail-container h2 {
+  color: #61dafb; /* Azul elétrico para o título, consistente */
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(97, 218, 251, 0.5);
+}
+
+.detail-item {
+  margin-bottom: 20px; /* Mais espaço entre os itens */
+  padding-bottom: 15px; /* Mais padding inferior */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória sólida e sutil */
+  color: #e0e0e0; /* Cor do texto dos detalhes */
+  font-size: 1.15rem; /* Fonte um pouco maior */
+  display: flex; /* Para alinhar label e valor */
+  align-items: baseline;
+}
+
+.detail-item strong {
+  color: #00e676; /* Verde vibrante para o label (destaque) */
+  margin-right: 15px; /* Mais espaço entre label e valor */
+  font-weight: 700;
+  flex-shrink: 0; /* Impede que o label encolha */
+  width: 150px; /* Largura fixa para os labels para alinhamento */
+}
+
+.detail-actions {
+  margin-top: 40px; /* Mais margem superior */
+  text-align: center;
+  display: flex; /* Para usar gap */
+  justify-content: center; /* Centralizar horizontalmente */
+  gap: 20px; /* Espaçamento entre os botões */
+}
+
+/* Reutilizando estilos de botões existentes e adicionando o de prontuário */
+.btn { /* Estilo base para todos os botões de ação */
+  padding: 12px 25px; /* Mais padding */
+  border: none;
+  border-radius: 30px; /* Botão "pill" */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra padrão para botões */
+  text-decoration: none; /* Garante que links se pareçam com botões */
+  display: inline-block; /* Para padding e margens corretas */
+}
+
+.btn:hover {
+  transform: translateY(-2px); /* Leve levantamento no hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra mais intensa no hover */
+}
+
+.btn-edit {
+  background-color: #ffeb3b; /* Amarelo vibrante, consistente */
+  color: #343a40;
+}
+
+.btn-edit:hover {
+  background-color: #fdd835;
+}
+
+.btn-prontuario { /* Adicionado novamente para consistência, se o HTML o usar */
+  background-color: #9b59b6; /* Roxo vibrante */
+  color: white;
+}
+
+.btn-prontuario:hover {
+  background-color: #8e44ad; /* Roxo mais escuro no hover */
+}
+
+.btn-back {
+  background-color: #4a4f58; /* Cinza escuro neutro, consistente com inputs */
+  color: #f0f0f0; /* Texto claro */
+}
+
+.btn-back:hover {
+  background-color: #3a3f47; /* Tom mais escuro no hover */
+}
